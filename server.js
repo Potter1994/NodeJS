@@ -1,6 +1,6 @@
 // 參考影片https://www.youtube.com/watch?v=zHB1dn8FU44&ab_channel=WenXuanDecode%E6%96%87%E8%BD%A9%E8%A7%A3%E7%A0%81
 // 使用 Node.js 自帶的 HTTP Module (模組) 返回一個 http object
-// 要用模組需要使用 require 這個函數去導入 (類似 JS new 一個物件的感覺)
+// 要用模組需要使用 require 這個函數去載入 (類似 JS new 一個物件的感覺)
 const http = require('http');
 
 
@@ -22,3 +22,10 @@ const ip ='127.0.0.1'; // Node.js 服務器在本機端運行，訪問本機端 
 server.listen(port, ip, () => {
     console.log(`Sever is running at http://${ip}:${port}`);
 })
+
+
+
+// 順序
+// 導入 http 模組
+// 用 http 模組創建 server ， NodeJS 後端服務器
+// 服務器在運行時監聽端口 3000 從這個端口收集來自客戶端的請求

@@ -1,0 +1,23 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "this is my project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Potter1994/NodeJS.git"
+  },
+  "author": "Potter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Potter1994/NodeJS/issues"
+  },
+  "homepage": "https://github.com/Potter1994/NodeJS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
