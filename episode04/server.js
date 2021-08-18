@@ -26,7 +26,7 @@ const server = http.createServer((request, response) => {
     let url = request.url;
 
     if(method === 'GET') {
-        // 使用 Javascript 的 URL object 來去使用他的方法可以用 get 請求參數
+        // 使用 Javascript 的 URL object 來去使用他的方法可以用 get 請求參數，範例這我們去 searchPath 來 get 他的 lang 值
         //             URL (當前訪問頁面, 基本URL(從 ip 跟 port 獲得))
         const requestURL = new URL(url, `http://${ip}:${port}`);
 
@@ -46,7 +46,7 @@ const server = http.createServer((request, response) => {
             selector = '';
         }
 
-        // url ?後面的好像屬於搜尋結果跟路徑無關
+        // url ?後面的好像屬於搜尋路徑跟網頁路徑無關的樣子
         if(url === '/') {
             sendResponse(`index${selector}.html`, 200, response)
         } else if(url === '/about.html'){
